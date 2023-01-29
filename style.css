@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+h1{
+  position: absolute;
+  color: rgba(245, 244, 244, 0.349);
+  top: 0;
+  left: 30px;
+  transition: all 1s easy-in-out;
+   
+
+}
+.color-change{
+  position: absolute;
+  width: 100%;
+  background-image: url(https://media.istockphoto.com/id/475856346/photo/serval.jpg?b=1&s=170667a&w=0&k=20&c=kpfhT5ZlMTjIt8bDPIqmWlpZyZhhvjk7Ad7WHS7HRUE=);
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  transition:  1s easy-in-out;
+   
+
+  
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container{
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+.slide{
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  flex: 1;
+  color: white;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  
+}
+.slide h3{
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+  left: 20px;
+  opacity: 0;
+}
+.slide.active{
+  flex: 10;
+}
+.slide.active h3{
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
